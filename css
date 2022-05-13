@@ -1,0 +1,117 @@
+body {
+    background-image: linear-gradient(#A4E5FD,#000000);
+    height: 700px;
+}
+
+h1 {
+    color: white;
+    font-family: DIN alternate;
+    font-size: 5em;
+    margin-left: 90px;
+    
+}
+
+.clock {
+    margin-left: -900px;
+    color: white;
+    font-size: 3em;
+    font-family: DIN alternate;
+    letter-spacing: 7px;
+   
+
+
+}
+
+
+/* -------------- animaties ------------ */ 
+
+#mars {
+    margin-left: 200px;
+    margin-top: 30px;
+    position: absolute;
+    top: -20px;
+	left: 220px;
+	animation: 1000ms pulsate infinite alternate ease-in-out;
+    box-shadow: 3em;
+}
+
+
+#falcon {
+    width: 10%;
+    margin-top: 200px;
+    transform: rotateZ(60deg);
+    transition: transform 2s ease-in-out; 
+}
+
+.falcon:hover #falcon{
+    transform: translate(900%);
+}
+
+@keyframes pulsate {
+  0% { 
+  	top: 1px; 
+  }
+  100% { 
+  	top: 8px;
+  }
+    
+   
+}
+
+
+/* -------- media queries ------------ */
+
+
+/* ----- vanaf 680 ----- */
+
+@media only screen and (min-width: 680px) {
+
+h1 {
+  font-size: 2em;
+}
+
+
+
+
+/* ----- vanaf 850 ----- */
+
+@media only screen and (min-width: 850px) {
+
+#flex {
+  display: flex;
+  justify-content: center;
+}
+
+#flex div {
+  text-align: center;
+  padding: 10px;
+}
+    
+h1 {
+  font-size: 5em;
+}
+
+}
+
+
+/* ----- vanaf 1050 ----- */
+
+@media only screen and (min-width: 1050px) {
+
+
+
+#date, #clock {
+  font-size: 30px;
+  margin-left: 200px;
+}
+
+
+    
+}
+
+
+
+
+
+
+
